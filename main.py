@@ -5,7 +5,7 @@ import streamlit as st
 st.title("DashCovid - um quadro informativo - ano 2020")
 st.set_page_config(page_title = "DASHCOVID",layout="wide")
 
-df = pd.read_csv('/content/WHO_time_series.csv')
+df = pd.read_csv('WHO_time_series.csv')
 
 df['Date_reported'] = pd.to_datetime(df['Date_reported'])
 
